@@ -1,32 +1,32 @@
-// Tablica z menu na każdy dzień
-const menuData = [
-    { day: "Niedziela", menu: "Tortilla z kurczakiem" }
-    { day: "Poniedziałek", menu: "Makaron z mięsem mielonym i z dodatkiem warzyw // Paweł - tortilla" },
-    { day: "Wtorek", menu: "Kurczak tikka massala z chlebkiem Naan" },
-    { day: "Środa", menu: "Bigos" },
-    { day: "Czwartek", menu: "Bigos" },
-    { day: "Piątek", menu: "Pancakes // Paweł - bigos" },
-    { day: "Sobota", menu: "Filet z piersi kurczaka" },
-];
+// Dane menu dla każdego dnia tygodnia
+const menuData = {
+    "Poniedziałek": "Makaron z mięsem mielonym i z dodatkiem warzyw // Paweł - tortilla",
+    "Wtorek": "Kurczak tikka massala z chlebkiem Naan",
+    "Środa": "Bigos",
+    "Czwartek": "Bigos",
+    "Piątek": "Pancakes // Paweł - bigos",
+    "Sobota": "Filet z piersi kurczaka",
+    "Niedziela": "Tortilla z kurczakiem"
+};
 
-// Funkcja do dynamicznego dodawania wierszy do tabeli
-function populateMenu() {
-    const tableBody = document.getElementById('menuTable');
+// Funkcja, która wyświetla menu dla danego dnia
+function showDayMenu(day) {
+    const tableBody = document.querySelector('#menuTable tbody');
+    tableBody.innerHTML = ''; // Wyczyszczenie tabeli przed dodaniem nowych danych
 
-    menuData.forEach(item => {
-        const row = document.createElement('tr');
-        const dayCell = document.createElement('td');
-        const menuCell = document.createElement('td');
+    const row = document.createElement('tr');
+    const dayCell = document.createElement('td');
+    const menuCell = document.createElement('td');
 
-        dayCell.textContent = item.day;
-        menuCell.textContent = item.menu;
+    dayCell.textContent = day;
+    menuCell.textContent = menuData[day];
 
-        row.appendChild(dayCell);
-        row.appendChild(menuCell);
-
-        tableBody.appendChild(row);
-    });
+    row.appendChild(dayCell);
+    row.appendChild(menuCell);
+    tableBody.appendChild(row);
 }
 
-// Wywołanie funkcji po załadowaniu strony
-window.onload = populateMenu;
+// Wyświetl domyślnie menu dla niedzieli przy pierwszym załadowaniu strony
+window.onload = function() {
+    showDayMenu('Niedziela');
+};
