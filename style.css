@@ -1,48 +1,42 @@
-/* Remove margins and padding from body and html */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: 'Georgia', serif;
     background: url('old-letter-clipart-royal-257628-4595167_preview_rev_1.png') no-repeat center center fixed;
-    background-size: cover; /* Ensure the image covers the entire screen */
+    background-size: 100% 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Adjust the menu content to blend with the background */
 .menu-content {
+    background-color: transparent; /* Usunięcie jasnego tła */
     text-align: center;
-    color: #3e2723; /* Dark brown text color to contrast with the background */
-    padding: 20px;
-    width: 80%;
+    color: #3e2723;
+    padding: 30px;
+    border-radius: 15px;
+    width: 120%;
     max-width: 800px;
-    background: none; /* Remove background color */
-    box-shadow: none; /* Remove box shadow */
+    box-shadow: none; /* Usunięcie cienia */
+    margin-top: 50px; /* Odstęp od góry */
+    margin-bottom: 10px; /* Odstęp od dołu */
 }
 
-/* Title styling */
+
 h1 {
-    font-size: 3em;
-    margin-bottom: 50px;
-    font-family: 'Papyrus', serif; /* Stylish title */
-    color: #7f5539; /* Brown color for the title */
+    font-size: 1.6em; /* Zmniejszony rozmiar tekstu */
+    margin-bottom: 3px; /* Mniejszy odstęp */
+    font-family: 'Papyrus', serif;
+    color: #7f5539;
     letter-spacing: 2px;
 }
 
-/* Styling for the menu */
 #menuScroll {
-    font-size: 1.5em;
-    line-height: 1.8;
+    font-size: 0.96em; /* Zmniejszony rozmiar tekstu */
+    line-height: 1; /* Mniejsze odstępy między liniami */
 }
 
-/* Individual menu items */
 .menu-item {
-    margin-bottom: 20px;
-}
-
-/* Optional: Add a subtle text shadow to improve readability against the image */
-h1, .menu-item p {
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1px;
 }
