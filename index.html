@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Obiadowe</title>
+    <title>Menu Obiadowe na Zwoju</title>
     <!-- Link do pliku CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,31 +13,14 @@
     <h1>Tygodniowe Menu Obiadowe</h1>
 </header>
 
-<nav>
-    <a href="#" onclick="showDayMenu('Poniedziałek')">Poniedziałek</a>
-    <a href="#" onclick="showDayMenu('Wtorek')">Wtorek</a>
-    <a href="#" onclick="showDayMenu('Środa')">Środa</a>
-    <a href="#" onclick="showDayMenu('Czwartek')">Czwartek</a>
-    <a href="#" onclick="showDayMenu('Piątek')">Piątek</a>
-    <a href="#" onclick="showDayMenu('Sobota')">Sobota</a>
-    <a href="#" onclick="showDayMenu('Niedziela')">Niedziela</a>
-</nav>
-
-<table id="menuTable">
-    <thead>
-        <tr>
-            <th>Dzień</th>
-            <th>Menu</th>
-        </tr>
-    </thead>
-    <tbody>
-        <!-- Wiersze zostaną dodane przez JavaScript -->
-    </tbody>
-</table>
+<section class="scroll">
+    <div id="menuScroll">
+        <!-- Menu zostanie wygenerowane przez JavaScript -->
+    </div>
+</section>
 
 <footer>
     <p>&copy; 2024 Menu Obiadowe. Wszystkie prawa zastrzeżone.</p>
-    <p>Pozdrawiam Ewelina</p>
 </footer>
 
 <!-- Skrypt JavaScript -->
