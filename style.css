@@ -1,33 +1,33 @@
-/* Reset margins and paddings for body and html */
+/* Remove margins and padding from body and html */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: 'Georgia', serif;
-    background: url('old-letter-clipart-royal-257628-4595167_preview_rev_1.png') no-repeat center center fixed;
-    background-size: 100% 100%; /* Ensures the image covers the entire viewport */
+    background: url('image.png') no-repeat center center fixed; /* Use the new image */
+    background-size: cover; /* Ensure the image covers the entire screen */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* Styling for the container holding the menu */
+/* Adjust the menu content to blend with the background */
 .menu-content {
-    background-color: rgba(255, 255, 255, 0.8); /* Slight white background to make text readable */
     text-align: center;
-    color: #3e2723;  /* Brown text color */
-    padding: 30px;
-    border-radius: 15px; /* Rounded corners for a nicer look */
+    color: #3e2723; /* Dark brown text color to contrast with the background */
+    padding: 20px;
     width: 80%;
     max-width: 800px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Soft shadow effect */
+    background: none; /* Remove background color */
+    box-shadow: none; /* Remove box shadow */
 }
 
+/* Title styling */
 h1 {
     font-size: 3em;
     margin-bottom: 50px;
-    font-family: 'Papyrus', serif; /* Stylish title font */
-    color: #7f5539; /* Brown color matching the scroll aesthetic */
+    font-family: 'Papyrus', serif; /* Stylish title */
+    color: #7f5539; /* Brown color for the title */
     letter-spacing: 2px;
 }
 
@@ -37,6 +37,12 @@ h1 {
     line-height: 1.8;
 }
 
+/* Individual menu items */
 .menu-item {
     margin-bottom: 20px;
+}
+
+/* Optional: Add a subtle text shadow to improve readability against the image */
+h1, .menu-item p {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
