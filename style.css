@@ -4,7 +4,7 @@ body, html {
     padding: 0;
     height: 100%;
     font-family: 'Georgia', serif;
-    background: url('image.png') no-repeat center center fixed; /* Use the new image */
+    background: url('old-letter-clipart-royal-257628-4595167_preview_rev_1.png') no-repeat center center fixed;
     background-size: cover; /* Ensure the image covers the entire screen */
     display: flex;
     justify-content: center;
