@@ -23,11 +23,8 @@ function populateMenu() {
         const menuDescription = document.createElement('p');
         menuDescription.textContent = item.menu;
 
-        const separator = document.createElement('hr');
-
         menuItem.appendChild(dayTitle);
         menuItem.appendChild(menuDescription);
-        menuItem.appendChild(separator);
 
         menuScroll.appendChild(menuItem);
     });
