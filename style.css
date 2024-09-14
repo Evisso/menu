@@ -34,7 +34,7 @@ h1 {
 
 #menuScroll {
     font-size: 0.96em; /* Zmniejszony rozmiar tekstu */
-    line-height: 1; /* Mniejsze odstępy między liniami */
+    line-height: 0; /* Mniejsze odstępy między liniami */
 }
 
 .menu-item {
