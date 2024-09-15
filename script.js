@@ -6,7 +6,7 @@ const menuData = [
     { day: "Czwartek", menu: "Bigos" },
     { day: "Piątek", menu: "Pancakes // Paweł - bigos" },
     { day: "Sobota", menu: "Filet z piersi kurczaka" },
-    { day: "Niedziela", menu: "Tortilla z kurczakiem" }
+    { day: "Niedziela", menu: "..." }
 ];
 
 // Funkcja do generowania menu
